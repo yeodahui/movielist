@@ -1,12 +1,326 @@
 @charset "UTF-8";
-@import url(d:\06 DEV\CodeLion_FrontendSchool_2\assignments\영화목록\style\base\reset.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.txt_ir {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transparent;
+}
+
 @font-face {
   font-family: NotoSans;
-  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf) format("woff") font-weight-bolder, url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf) format("woff") font-weight-bold, url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf) format("woff") font-weight-normal;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf) format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf) format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf) format("woff");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(/assets/fonts/Roboto/Roboto-Black.ttf) format("woff") font-weight-bolder, url(/assets/fonts/Roboto/Roboto-Bold.ttf) format("woff") font-weight-bold, url(/assets/fonts/Roboto/Roboto-Medium.ttf) format("woff") font-weight-500, url(/assets/fonts/Roboto/Roboto-Regular.ttf) format("woff") font-weight-normal;
+  src: url(/assets/fonts/Roboto/Roboto-Black.ttf) format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Bold.ttf) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Medium.ttf) format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf) format("woff");
+  font-weight: 400;
+}
+
+.item_movie {
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: "NotoSans", sans-serif;
+}
+
+.info_movie {
+  padding: 20px;
+}
+
+.link_detail {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.link_detail .img_poster {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 11px;
+}
+
+.link_detail .tit_movie {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  line-height: 23px;
+  max-height: 23px;
+  font-weight: 900;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list_info {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.list_info dl + dl + dl {
+  margin-top: 5px;
+}
+
+.list_info .genre {
+  float: left;
+}
+
+.list_info .star {
+  float: right;
+}
+
+.list_info .open,
+.list_info .cast {
+  clear: both;
+}
+
+.list_info dt,
+.list_info dd {
+  display: inline-block;
+}
+
+.list_info dt {
+  color: #828282;
+}
+
+.list_info .star dd::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+  background-image: url("/assets/별점이미지.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  padding: 9px 0 12px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  background-color: #f2f2f2;
+  font-family: "NotoSans", sans-serif;
+  font-weight: 500;
+}
+
+.btn_trailer {
+  border-left: 0;
+  border-right: 0;
+}
+
+.btn_trailer::before {
+  content: "";
+  display: inline-block;
+  margin-right: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url("/assets/아이콘_재생.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,43 @@
+// NotoSans
 @font-face {
   font-family: NotoSans;
-  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf) format("woff")
-      font-weight-bolder,
-    url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf) format("woff")
-      font-weight-bold,
-    url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf) format("woff")
-      font-weight-normal;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf) format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: NotoSans;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: NotoSans;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: NotoSans;
+  src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf) format("woff");
+  font-weight: 400;
 }
 
+// Roboto
 @font-face {
   font-family: Roboto;
-  src: url(/assets/fonts/Roboto/Roboto-Black.ttf) format("woff")
-      font-weight-bolder,
-    url(/assets/fonts/Roboto/Roboto-Bold.ttf) format("woff") font-weight-bold,
-    url(/assets/fonts/Roboto/Roboto-Medium.ttf) format("woff") font-weight-500,
-    url(/assets/fonts/Roboto/Roboto-Regular.ttf) format("woff")
-      font-weight-normal;
+  src: url(/assets/fonts/Roboto/Roboto-Black.ttf) format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Bold.ttf) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Medium.ttf) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf) format("woff");
+  font-weight: 400;
 }
