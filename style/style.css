@@ -207,6 +207,23 @@ a {
   font-weight: 400;
 }
 
+/* 영화 목록 */
+.list_movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 26px 27px 30px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  gap: 23px;
+}
+
+/* 영화 항목 */
 .item_movie {
   width: 220px;
   background-color: #fff;
@@ -291,6 +308,12 @@ a {
   background-repeat: no-repeat;
 }
 
+.cont-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .btn {
   padding: 9px 0 12px;
   width: 50%;
@@ -303,18 +326,28 @@ a {
   font-weight: 500;
 }
 
-.btn_trailer {
+.btn:last-of-type {
   border-left: 0;
   border-right: 0;
 }
 
+.btn_trailer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .btn_trailer::before {
   content: "";
-  display: inline-block;
+  float: left;
+  margin-top: 2px;
   margin-right: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("/assets/아이콘_재생.png");
+  background-image: url("../assets/img/아이콘_재생.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
