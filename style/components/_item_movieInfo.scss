@@ -2,6 +2,7 @@
 .list_movie {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
   margin: 0 auto;
   padding: 26px 27px 30px;
   width: 100%;
@@ -23,7 +24,9 @@
 }
 
 .info_movie {
+  position: relative;
   padding: 20px;
+  width: 100%;
 }
 
 .link_detail {
@@ -42,6 +45,7 @@
     position: relative;
     line-height: 23px;
     max-height: 23px;
+    font-size: 1.6rem;
     font-weight: 900;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -50,7 +54,7 @@
 
 .list_info {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 19px;
 
   dl + dl + dl {
@@ -93,6 +97,10 @@
 
 .cont-btn {
   display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .btn {
