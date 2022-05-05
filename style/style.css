@@ -207,17 +207,17 @@ a {
   font-weight: 400;
 }
 
-.wrapper {
-  max-width: 1060px;
-  margin: 0 auto;
-}
-
 .movie {
-  padding: 41px 30px 30px;
+  margin-top: 90px;
+  padding: 40px 30px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 1.6rem;
   text-align: center;
   background-color: #F2F2F2;
+  border: solid 2px #bdbdbd;
   border-radius: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 .movie h2 {
@@ -231,6 +231,7 @@ a {
 }
 
 .nav-movie {
+  margin-bottom: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,6 +242,7 @@ a {
 }
 
 .link-movie {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #828282;
 }
@@ -260,13 +262,16 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  gap: 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
-  padding: 26px 27px 30px;
+  padding: 26px 21px 30px;
   width: 100%;
+  text-align: left;
   background-color: #fff;
   border: 2px solid #bdbdbd;
   border-radius: 15px;
-  gap: 23px;
 }
 
 /* 영화 항목 */
@@ -361,10 +366,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .btn {
@@ -411,7 +412,8 @@ html {
 }
 
 .wrapper {
-  max-width: 1190px;
+  max-width: 1060px;
+  margin: 0 auto;
 }
 
 h2 {

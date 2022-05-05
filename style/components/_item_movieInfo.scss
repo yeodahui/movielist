@@ -3,13 +3,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
+  gap: 23px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 26px 27px 30px;
+  padding: 26px 21px 30px;
   width: 100%;
+  text-align: left;
   background-color: #fff;
   border: 2px solid #bdbdbd;
   border-radius: 15px;
-  gap: 23px;
 }
 
 /* 영화 항목 */
@@ -97,10 +99,10 @@
 
 .cont-btn {
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
 }
 
 .btn {
