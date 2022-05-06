@@ -274,11 +274,11 @@ a {
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   font-family: "NotoSans", sans-serif;
+  position: relative;
 }
 
 .info-movie {
   position: relative;
-  padding: 20px;
   width: 100%;
 }
 
@@ -313,6 +313,8 @@ a {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 19px;
+  margin-bottom: 38px;
+  padding: 19px 20px;
 }
 
 .list-info .info-item {
@@ -357,6 +359,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .btn {
