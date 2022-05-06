@@ -242,6 +242,14 @@ a {
   color: #000;
 }
 
+@media screen and (max-width: 768px) {
+  .movie {
+    margin: 0 0 100px;
+    padding: 80px 30px 70px;
+    border-radius: 0px;
+  }
+}
+
 /* 영화 목록 */
 .list-movie {
   display: -webkit-box;
