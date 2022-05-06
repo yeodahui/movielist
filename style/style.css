@@ -422,14 +422,26 @@ a {
   line-height: 2.6rem;
 }
 
-.footerInfo-top {
+.footerInfo-top,
+.footerInfo-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footerInfo-top {
   margin-bottom: 42px;
+}
+
+.footerInfo-bottom {
+  margin-top: 36px;
 }
 
 .snsLink {
@@ -458,30 +470,18 @@ a {
   background-image: url("../../assets/img/SNS_icons/facebook.png");
 }
 
-.footerInfo-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 36px;
-}
-
-.footerInfo-copyrights,
-.copy {
+.footerInfo-copyrights {
   color: #4f4f4f;
   font-size: 1.4rem;
   line-height: 2rem;
+  word-break: keep-all;
 }
 
-.footerInfo-copyrights dl,
-.copy dl {
+.footerInfo-copyrights dl {
   display: inline-block;
 }
 
-.footerInfo-copyrights dl:not(:last-child)::after,
-.copy dl:not(:last-child)::after {
+.footerInfo-copyrights dl:not(:last-child)::after {
   content: "";
   display: inline-block;
   vertical-align: bottom;
@@ -492,20 +492,51 @@ a {
 }
 
 .footerInfo-copyrights dl dt,
-.footerInfo-copyrights dl dd,
-.copy dl dt,
-.copy dl dd {
+.footerInfo-copyrights dl dd {
   display: inline-block;
 }
 
-.footerInfo-copyrights dl dt,
-.copy dl dt {
+.footerInfo-copyrights dl dt {
   font-weight: 700;
+}
+
+.copy {
+  color: #4f4f4f;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .copy,
 .info-brandName dd {
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+    padding: 30px 18px 30px;
+  }
+  .footer .footerInfo-top,
+  .footer .footerInfo-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .footer .footerInfo-top {
+    margin-bottom: 21px;
+  }
+  .footer .footerInfo-bottom {
+    margin-top: 18px;
+  }
+  .footer .footerInfo-copyrights {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 html {
