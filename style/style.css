@@ -198,13 +198,13 @@ a {
 }
 
 .movie {
-  margin-top: 90px;
+  margin: 90px 0 135px;
   padding: 40px 30px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.6rem;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: solid 2px #bdbdbd;
   border-radius: 15px;
   font-family: "Roboto", sans-serif;
@@ -517,6 +517,7 @@ h2 {
 }
 
 .wrapper {
+  overflow: auto;
   max-width: 1060px;
   margin: 0 auto;
 }
