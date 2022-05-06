@@ -1,0 +1,81 @@
+.footer {
+  background-color: #f2f2f2;
+  padding: 53px 0 38px;
+
+  .logo {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+}
+
+.footerInfo-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.snsLink {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 21px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-twitter {
+    background-image: url("../../assets/img/SNS_icons/twitter.png");
+  }
+  &-instagram {
+    background-image: url("../../assets/img/SNS_icons/instagram.png");
+  }
+  &-facebook {
+    background-image: url("../../assets/img/SNS_icons/facebook.png");
+  }
+}
+
+.footerInfo-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.footerInfo-copyrights,
+.copy {
+  color: #4f4f4f;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  dl {
+    display: inline-block;
+
+    &:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0 5px;
+      width: 1px;
+      height: 14px;
+      background-color: #4f4f4f;
+    }
+
+    dt,
+    dd {
+      display: inline-block;
+    }
+
+    dt {
+      font-weight: 700;
+    }
+  }
+}
+
+.copy,
+.info-brandName dd {
+  font-weight: 700;
+}

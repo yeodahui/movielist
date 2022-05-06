@@ -65,6 +65,9 @@
 
   .info-item {
     margin-bottom: 5px;
+    dt {
+      margin-right: 5px;
+    }
   }
 
   .info-item-genre {
@@ -72,6 +75,19 @@
   }
   .info-item-star {
     float: right;
+    dd::before {
+      content: "";
+      display: inline-block;
+      box-sizing: border-box;
+      margin-right: 4px;
+      width: 14px;
+      height: 14px;
+      vertical-align: -1px;
+      background-image: url("../../assets/img/별점이미지.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   .info-item-open,
@@ -86,18 +102,6 @@
 
   dt {
     color: #828282;
-  }
-
-  .star dd::before {
-    content: "";
-    display: inline-block;
-    margin-right: 4px;
-    width: 14px;
-    height: 14px;
-    background-image: url("/assets/별점이미지.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 

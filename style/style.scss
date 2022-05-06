@@ -6,6 +6,7 @@
 @import "screens/main";
 
 @import "components/item_movieInfo";
+@import "components/footer";
 
 html {
   font-size: 10px;
@@ -16,7 +17,6 @@ h2 {
 }
 
 .wrapper {
-  overflow: auto;
   max-width: 1060px;
   margin: 0 auto;
 }
