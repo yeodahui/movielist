@@ -149,16 +149,6 @@ a {
   color: inherit;
 }
 
-.txt_ir {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  text-indent: -9999px;
-  line-height: 0;
-  font-size: 1px;
-  color: transparent;
-}
-
 @font-face {
   font-family: NotoSans;
   src: url(/assets/fonts/Noto_Sans_KR/NotoSansKR-Black.otf) format("woff");
@@ -253,7 +243,7 @@ a {
 }
 
 /* 영화 목록 */
-.list_movie {
+.list-movie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +265,7 @@ a {
 }
 
 /* 영화 항목 */
-.item_movie {
+.item-movie {
   width: 220px;
   background-color: #fff;
   border: 1px solid #bdbdbd;
@@ -286,19 +276,21 @@ a {
   font-family: "NotoSans", sans-serif;
 }
 
-.info_movie {
+.info-movie {
   position: relative;
   padding: 20px;
   width: 100%;
 }
 
-.link_detail {
+.link-detail {
   display: block;
   overflow: hidden;
   margin-bottom: 12px;
 }
 
-.link_detail .img_poster {
+.link-detail .img-poster {
+  width: 180px;
+  height: 250px;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -306,10 +298,9 @@ a {
   margin-bottom: 11px;
 }
 
-.link_detail .tit_movie {
+.link-detail .tit-movie {
   display: block;
   overflow: hidden;
-  position: relative;
   line-height: 23px;
   max-height: 23px;
   font-size: 1.6rem;
@@ -318,39 +309,39 @@ a {
   text-overflow: ellipsis;
 }
 
-.list_info {
+.list-info {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 19px;
 }
 
-.list_info dl + dl + dl {
-  margin-top: 5px;
+.list-info .info-item {
+  margin-bottom: 5px;
 }
 
-.list_info .genre {
+.list-info .info-item-genre {
   float: left;
 }
 
-.list_info .star {
+.list-info .info-item-star {
   float: right;
 }
 
-.list_info .open,
-.list_info .cast {
+.list-info .info-item-open,
+.list-info .info-item-cast {
   clear: both;
 }
 
-.list_info dt,
-.list_info dd {
+.list-info dt,
+.list-info dd {
   display: inline-block;
 }
 
-.list_info dt {
+.list-info dt {
   color: #828282;
 }
 
-.list_info .star dd::before {
+.list-info .star dd::before {
   content: "";
   display: inline-block;
   margin-right: 4px;
@@ -385,7 +376,7 @@ a {
   border-right: 0;
 }
 
-.btn_trailer {
+.btn-trailer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +385,7 @@ a {
           justify-content: center;
 }
 
-.btn_trailer::before {
+.btn-trailer::before {
   content: "";
   float: left;
   margin-top: 2px;
@@ -411,12 +402,23 @@ html {
   font-size: 10px;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
+
 .wrapper {
+  overflow: auto;
   max-width: 1060px;
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 2.4rem;
+.txt-ir {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+  color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

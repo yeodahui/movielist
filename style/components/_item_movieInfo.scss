@@ -1,5 +1,5 @@
 /* 영화 목록 */
-.list_movie {
+.list-movie {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -15,7 +15,7 @@
 }
 
 /* 영화 항목 */
-.item_movie {
+.item-movie {
   width: 220px;
   background-color: #fff;
   border: 1px solid #bdbdbd;
@@ -25,26 +25,27 @@
   font-family: "NotoSans", sans-serif;
 }
 
-.info_movie {
+.info-movie {
   position: relative;
   padding: 20px;
   width: 100%;
 }
 
-.link_detail {
+.link-detail {
   display: block;
   overflow: hidden;
   margin-bottom: 12px;
-  .img_poster {
+  .img-poster {
+    width: 180px;
+    height: 250px;
     border: 1px solid #bdbdbd;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 11px;
   }
-  .tit_movie {
+  .tit-movie {
     display: block;
     overflow: hidden;
-    position: relative;
     line-height: 23px;
     max-height: 23px;
     font-size: 1.6rem;
@@ -54,24 +55,28 @@
   }
 }
 
-.list_info {
+.list-info {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 19px;
 
-  dl + dl + dl {
-    margin-top: 5px;
+  .info-item {
+    margin-bottom: 5px;
+
+    &:last-child {
+      // margin-bottom: 41px;
+    }
   }
 
-  .genre {
+  .info-item-genre {
     float: left;
   }
-  .star {
+  .info-item-star {
     float: right;
   }
 
-  .open,
-  .cast {
+  .info-item-open,
+  .info-item-cast {
     clear: both;
   }
 
@@ -99,10 +104,6 @@
 
 .cont-btn {
   display: flex;
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
 }
 
 .btn {
@@ -122,7 +123,7 @@
   }
 }
 
-.btn_trailer {
+.btn-trailer {
   display: flex;
   justify-content: center;
   &::before {
