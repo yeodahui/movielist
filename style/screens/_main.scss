@@ -1,12 +1,12 @@
 .movie {
-  margin-top: 90px;
+  margin: 90px 0 135px;
   padding: 40px 30px 30px;
   box-sizing: border-box;
   font-size: 1.6rem;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: solid 2px #bdbdbd;
-  border-radius: 15px ;
+  border-radius: 15px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -27,7 +27,7 @@
   gap: 60px;
 }
 
-.link-movie  {
+.link-movie {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #828282;
@@ -36,4 +36,4 @@
 .link-movie-focus {
   font-weight: 900;
   color: #000;
-} 
+}
