@@ -225,16 +225,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 650px;
 }
 
 .link-movie {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #828282;
+  word-break: keep-all;
 }
 
 .link-movie-focus {
@@ -247,6 +247,15 @@ a {
     margin: 0 0 100px;
     padding: 80px 30px 70px;
     border-radius: 0px;
+  }
+  .nav-movie {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-movie li:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 

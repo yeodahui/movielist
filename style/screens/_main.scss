@@ -23,14 +23,15 @@
 .nav-movie {
   margin-bottom: 28px;
   display: flex;
-  justify-content: center;
-  gap: 60px;
+  justify-content: space-around;
+  max-width: 650px;
 }
 
 .link-movie {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #828282;
+  word-break: keep-all;
 }
 
 .link-movie-focus {
@@ -43,5 +44,11 @@
     margin: 0 0 100px;
     padding: 80px 30px 70px;
     border-radius: 0px;
+  }
+  .nav-movie {
+    flex-direction: column;
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
